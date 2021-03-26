@@ -1,0 +1,34 @@
+<form
+  class="container"
+  (ngSubmit)="submitQuote(); quoteForm.reset()"
+  #quoteForm="ngForm"
+>
+  <label for="author">Author</label>
+  <input
+    type="text"
+    class="form-control"
+    id="author"
+    name="author"
+    [(ngModel)]="newQuote.author"
+    #author="ngModel"
+    required
+  />
+  <label for="quote">Quote</label>
+  <textarea
+    class="form-control"
+    name="quote"
+    [(ngModel)]="newQuote.quote"
+    #quote="ngModel"
+    id="quote"
+    cols="6"
+    rows="3"
+    required
+  ></textarea>
+  <button
+    type="submit"
+    [disabled]="!quoteForm.form.valid"
+    class="btn btn-primary mt-3"
+  >
+    Add Quote
+  </button>
+</form>
