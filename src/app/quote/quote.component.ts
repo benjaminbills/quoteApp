@@ -19,17 +19,20 @@ export class QuoteComponent implements OnInit {
     new Quote(
       1,
       'Rick Falkvinge',
-      'Bitcoin will do to banks what email did to the postal industry'
+      'Bitcoin will do to banks what email did to the postal industry',
+      'Benjamin Obafemi'
     ),
     new Quote(
       2,
       'Adam Draper',
-      'Bitcoin is here to stay. There would be a hacker uproar to anyone who attempted to take credit for the patent of cryptocurrency. And I wouldn’t want to be on the receiving end of hacker fury.'
+      'Bitcoin is here to stay. There would be a hacker uproar to anyone who attempted to take credit for the patent of cryptocurrency. And I wouldn’t want to be on the receiving end of hacker fury.',
+      'Floyd Mayweather'
     ),
     new Quote(
       3,
       'Elon Musk',
-      'Self-driving cars are the natural extension of active safety and obviously something we should do.'
+      'Self-driving cars are the natural extension of active safety and obviously something we should do.',
+      'John Doe'
     ),
   ];
   upVote(index: number) {

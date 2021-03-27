@@ -24,6 +24,16 @@
     rows="3"
     required
   ></textarea>
+  <label for="submittedBy">Submitted By:</label>
+  <input
+    type="text"
+    class="form-control"
+    id="submittedBy"
+    name="submittedBy"
+    [(ngModel)]="newQuote.submittedBy"
+    #submittedBy="ngModel"
+    required
+  />
   <button
     type="submit"
     [disabled]="!quoteForm.form.valid"
