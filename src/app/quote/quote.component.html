@@ -27,12 +27,17 @@
       </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
-          <p appHighlightHigestVote *ngIf="quote.upVotes > 0">
-            {{ quote.id }}
-            {{ setHighest().id }}
+          <p
+            appHighlightHigestVote
+            *ngIf="
+              i == 0 &&
+              quote.upVotes === setHighest().upVotes &&
+              quote.upVotes > 0
+            "
+          >
             {{ quote.quote }}
           </p>
-          <p *ngIf="setHighest().id != quote.id || quote.upVotes === 0">
+          <p *ngIf="setHighest().id !== quote.id || quote.upVotes === 0">
             {{ quote.quote }}
           </p>
           <footer class="blockquote-footer">

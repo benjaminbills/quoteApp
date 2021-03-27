@@ -54,7 +54,7 @@ export class QuoteComponent implements OnInit {
   }
   setHighest() {
     let highQuote = { ...this.checkHighestUpvote() };
-    return highQuote[1];
+    return highQuote[0];
   }
   deleteQuote(index: number) {
     this.quotes.splice(index, 1);
