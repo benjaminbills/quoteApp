@@ -9,6 +9,7 @@ import { QuoteVoteComponent } from './quote-vote/quote-vote.component';
 import { FormsModule } from '@angular/forms';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HighlightHigestVoteDirective } from './highlight-higest-vote.directive';
+import { DateCountPipe } from './date-count.pipe';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { HighlightHigestVoteDirective } from './highlight-higest-vote.directive'
     QuoteFormComponent,
     QuoteVoteComponent,
     HighlightHigestVoteDirective,
+    DateCountPipe,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, FontAwesomeModule],
   providers: [],
