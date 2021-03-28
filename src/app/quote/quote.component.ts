@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { faQuoteLeft, faQuoteRight } from '@fortawesome/free-solid-svg-icons';
 import { Quote } from '../quote';
 
 @Component({
@@ -7,6 +8,8 @@ import { Quote } from '../quote';
   styleUrls: ['./quote.component.css'],
 })
 export class QuoteComponent implements OnInit {
+  faQuoteRight = faQuoteRight;
+  faQuoteLeft = faQuoteLeft;
   quotes: Quote[] = [
     new Quote(
       1,
