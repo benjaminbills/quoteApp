@@ -42,7 +42,7 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 
 ## Built with
 
-- [Angular CLI](https://github.com/angular/angular-cli)- version 11.2.5. - Javascript framework for building Appliction.
+- [Angular CLI](https://github.com/angular/angular-cli)- version 11.2.5. - Javascript framework for building Application.
 - [Typescript](https://www.typescriptlang.org/) - Opensource language which builds on Javascript.
 - [Fontawesome](https://fontawesome.com/) - Vector Icons , Social Logos and Cross-browser compatible.
 - [Bootstrap](http://getbootstrap.com/) - Extensive list of components and Bundled Javascript plugins.
@@ -50,7 +50,6 @@ If you'd like to request a new function, feel free to do so by opening an issue 
 ## To-do
 
 - Modify UX/UI for better experience.
-  |
 
 ## [License](https://github.com/benjaminbills/quoteApp/blob/master/License)
 
