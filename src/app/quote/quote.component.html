@@ -7,7 +7,7 @@
   <div *ngFor="let quote of checkHighestUpvote(); let i = index">
     <div class="card mb-4">
       <div class="card-header">
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-10">
             <button class="btn btn-success mr-2" (click)="upVote(i)">
               <fa-icon [icon]="faThumbsUp" class="mr-3"></fa-icon>
@@ -23,7 +23,13 @@
               <fa-icon [icon]="faTrashAlt"></fa-icon>
             </button>
           </div>
-        </div>
+        </div> -->
+        <app-quote-header
+          [quote]="quote"
+          (quoteDelete)="deleteQuote($event, i)"
+          (quoteUpvote)="upvoteQuote(i)"
+          (quoteDownvote)="downvoteQuote(i)"
+        ></app-quote-header>
       </div>
       <div class="card-body">
         <blockquote class="blockquote mb-0">
@@ -40,21 +46,7 @@
           <p *ngIf="setHighest().id !== quote.id || quote.upVotes === 0">
             {{ quote.quote }}
           </p>
-          <footer class="blockquote-footer">
-            <cite title="Source Title">{{ quote.author }}</cite>
-            <div class="row">
-              <div class="col">
-                <p>
-                  Submitted By: <span>{{ quote.submittedBy }}</span>
-                </p>
-              </div>
-              <div class="col">
-                <p>
-                  Created: <span>{{ quote.createdDate | dateCount }}</span>
-                </p>
-              </div>
-            </div>
-          </footer>
+          <app-quote-footer [quote]="quote"></app-quote-footer>
         </blockquote>
       </div>
     </div>

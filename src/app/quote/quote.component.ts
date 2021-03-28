@@ -1,10 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quote';
-import {
-  faThumbsDown,
-  faThumbsUp,
-  faTrashAlt,
-} from '@fortawesome/free-solid-svg-icons';
 
 @Component({
   selector: 'app-quote',
@@ -12,9 +7,6 @@ import {
   styleUrls: ['./quote.component.css'],
 })
 export class QuoteComponent implements OnInit {
-  faThumbsUp = faThumbsUp;
-  faThumbsDown = faThumbsDown;
-  faTrashAlt = faTrashAlt;
   quotes: Quote[] = [
     new Quote(
       1,
@@ -38,10 +30,10 @@ export class QuoteComponent implements OnInit {
       new Date(2020, 3, 14)
     ),
   ];
-  upVote(index: number) {
+  upvoteQuote(index: number) {
     this.quotes[index].upVotes += 1;
   }
-  downVote(index: number) {
+  downvoteQuote(index: number) {
     this.quotes[index].downVotes += 1;
   }
   addNewQuote(quote: Quote) {
@@ -56,7 +48,9 @@ export class QuoteComponent implements OnInit {
     let highQuote = { ...this.checkHighestUpvote() };
     return highQuote[0];
   }
-  deleteQuote(index: number) {
+  deleteQuote(toDelete: boolean, index: number) {
+    console.log('Clicked');
+
     this.quotes.splice(index, 1);
   }
   constructor() {}
