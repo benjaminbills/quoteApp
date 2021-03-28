@@ -1,6 +1,6 @@
 .upvote {
-  background-color: lightgreen;
-  color: rgb(33, 155, 88);
+  background-color: rgb(79, 204, 79);
+  color: rgb(18, 71, 42);
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
@@ -13,8 +13,8 @@
   transition: all 0.2s linear;
 }
 .upvote:hover {
-  color: green;
-  background-color: rgb(158, 207, 158);
+  color: rgb(29, 221, 29);
+  background-color: rgb(255, 255, 255);
 }
 .downvote:hover {
   color: red;
