@@ -1,0 +1,15 @@
+<footer class="blockquote-footer">
+  <cite title="Source Title">{{ quote.author }}</cite>
+  <div class="row">
+    <div class="col">
+      <p>
+        Submitted By: <span>{{ quote.submittedBy }}</span>
+      </p>
+    </div>
+    <div class="col">
+      <p>
+        Created: <span>{{ quote.createdDate | dateCount }}</span>
+      </p>
+    </div>
+  </div>
+</footer>
