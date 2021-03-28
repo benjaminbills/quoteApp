@@ -1,7 +1,5 @@
 # WebApp
 
-This project was generated with
-
 <table>
 <tr>
 <td>
