@@ -24,10 +24,22 @@
               quote.upVotes > 0
             "
           >
+            <span>
+              <fa-icon [icon]="faQuoteLeft"></fa-icon>
+            </span>
             {{ quote.quote }}
+            <span>
+              <fa-icon [icon]="faQuoteRight"></fa-icon>
+            </span>
           </p>
           <p *ngIf="setHighest().id !== quote.id || quote.upVotes === 0">
+            <span>
+              <fa-icon [icon]="faQuoteLeft"></fa-icon>
+            </span>
             {{ quote.quote }}
+            <span>
+              <fa-icon [icon]="faQuoteRight"></fa-icon>
+            </span>
           </p>
           <app-quote-footer [quote]="quote"></app-quote-footer>
         </blockquote>
