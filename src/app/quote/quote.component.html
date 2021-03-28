@@ -7,23 +7,6 @@
   <div *ngFor="let quote of checkHighestUpvote(); let i = index">
     <div class="card mb-4">
       <div class="card-header">
-        <!-- <div class="row">
-          <div class="col-10">
-            <button class="btn btn-success mr-2" (click)="upVote(i)">
-              <fa-icon [icon]="faThumbsUp" class="mr-3"></fa-icon>
-              <span>{{ quote.upVotes }}</span>
-            </button>
-            <button class="btn btn-danger" (click)="downVote(i)">
-              <fa-icon [icon]="faThumbsDown" class="mr-3"></fa-icon>
-              <span>{{ quote.downVotes }}</span>
-            </button>
-          </div>
-          <div class="col-2 text-center">
-            <button class="btn btn-danger" (click)="deleteQuote(i)">
-              <fa-icon [icon]="faTrashAlt"></fa-icon>
-            </button>
-          </div>
-        </div> -->
         <app-quote-header
           [quote]="quote"
           (quoteDelete)="deleteQuote($event, i)"
