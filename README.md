@@ -3,7 +3,7 @@
 <table>
 <tr>
 <td>
-  A webapp that enble you to post inspirationl Quotes view List of Quote posted.
+  A webapp that enble you to post inspirational Quotes view List of Quote posted.
 </td>
 </tr>
 </table>
